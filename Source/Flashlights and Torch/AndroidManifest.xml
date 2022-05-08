@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soulappsworld.flashlights"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- Required permissions for all ads. This will apply for all ads. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" >
+    </uses-feature>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/SpalshScreen" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Main_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Setting"
+            android:label="@string/menu_settings"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.AboutUS"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Simple_FlashLight"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Screen_Light"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_FlashLight_Blinking"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Traffic_Signal"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Police_Light"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.soulappsworld.flashlights.FT_Background"
+            android:label="@string/Info"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+    </application>
+
+</manifest>

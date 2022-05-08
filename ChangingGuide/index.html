@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">Changing Guide</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Flash Lights + Torch&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: SoulAppsWorld<br>
+					By: SoulAppsWorld<br>
+					Email:sainikuldeepsingh89@gmail.com</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Flashlight app for your device is the simplest app and very useful flashlight application. Will use device's camera flash/ LED/screen as a light of source.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+	  <h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#javascript">About Flashlight and Torch.</a></li>
+			<li><a href="#javascript">Changing App Icon</a></li>
+			<li><a href="#javascript">Changing Admob ID in Layout + Interstintial ID</a></li>
+			<li><a href="#javascript">Changing Links in Java Files</a></li>
+			<li><a href="#javascript">Adding Google Play Library for Admob Ads.</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) About Flashlight and Torch</strong> - <a href="#toc">top</a></h3>
+		<h4><tt>It has 6 different lights and screen torch in one app.</tt></h4>
+		<h4>Flashlight + Torch App use following Sources of light:</h4>
+		<h4>• Flashlight - Camera LED Flashlight. It is using device's camera flashlight to emit bright light.<br>
+		  • Torch- LED flash(Camera Flashlight) which emits very intense light in the dark. <br>
+		  • Screen Light - emits light from screen and work as Torch when no Camera flashlight. <br>
+		  • Police Lights - It is police light and look like dancing light in device screen.<br>
+		  • Color Flashlight -You can change the brightness and the color of screen by one swipe.<br>
+		  • Traffic Lights - Enjoy traffic signal lights in your app.            </h4>
+		<p><img src="assets/2a15799f-a935-47ad-b8a0-64e4a83ea038.png" alt="" width="250" height="400"><img src="assets/80a12508-fc80-4d92-b1cd-1fe32e636a23.png" alt="" width="250" height="400"><img src="assets/446871b2-180e-4939-a2b4-21bb01b08e1c.png" alt="" width="250" height="400"></p>
+		<p><img src="assets/5e6e0145-54fd-470b-8a1d-28dba735f9dd.png" alt="" width="250" height="400"><img src="assets/127d5d7a-87dd-499f-b822-15985bc35a4a.png" alt="" width="250" height="400"><img src="assets/cdf20374-2b26-4b1c-a1ab-f1525f54e860.png" alt="" width="250" height="400"></p>
+		<p>&nbsp;</p> 
+
+		<hr>
+
+	  <h3 id="cssFiles"><strong>B) Changing App Icon</strong><a href="#toc"></a></h3>
+
+	  <p><tt>Change app icon with different dimensions. You can use below link to make app icon easily.</tt></p>
+	  <h2>http://romannurik.github.io/AndroidAssetStudio/icons-launcher.html </h2>
+	  <p><img src="assets/app_icon.png" alt="" width="790" height="734"></p>
+	  <hr>
+		
+	  <h3 id="javascript"><strong>C) Changing Admob ID + Interstintial ID</strong> - <a href="#toc">top</a></h3>
+		
+	  <p><tt> You have to change Admob id in 10 Layout file and one java file.</tt></p>
+	  <h3><strong>(1)</strong> aboutus.xml</h3>
+	  <p><img src="assets/aboutus.png" alt="" width="786" height="559"></p>
+	  <h3><strong>(2)</strong> ft_background.xml , ft_flashlight_blinking.xml , ft_main_activity_2.xml , ft_main_activity.xml , </h3>
+	  <h3>	 ft_police_light.xml , ft_screen_light.xml , ft_setting.xml , ft_simple_flashlight.xml , ft_traffic_signal.xml</h3>
+		<p><img src="assets/admob_xml.png" alt="" width="790" height="656"></p>
+      <h3>(3) FT_Main_Activity.java</h3>
+	  <p><img src="assets/interstintial.png" alt="" width="791" height="629"></p>
+	  <hr>
+      <h3 id="cssFiles2"><strong>D) Changing Links in Java Files</strong><a href="#toc"></a></h3>
+      <p><tt>Change your own links like package link and other links according to your app in two java files</tt></p>
+      <p><tt><strong>AboutUs.java and Constant_Data.java</strong></tt></p>
+      <h1><img src="assets/google_lib.png" alt="" width="1024" height="768"></h1>
+      <p><img src="assets/changing_links_2.png" alt="" width="783" height="516"></p>
+      <hr>
+      <h3 id="cssFiles3"><strong>E) Adding Google Play Library for Admob Ads.</strong><a href="#toc"></a></h3>
+      <p><tt>Change your own links like package link and other links according to your app in two java files</tt></p>
+      <p><tt><strong>AboutUs.java and Constant_Data.java</strong></tt></p>
+      <h1><img src="assets/google_lib.png" alt="" width="791" height="734"></h1>
+      <p><img src="assets/google_lib_2.png" alt="" width="786" height="600"></p>
+      <p></p>
+      <p>&nbsp;</p>
+		<hr>
+		<p class="append-bottom alt large"><strong>SoulAppsWorld</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
